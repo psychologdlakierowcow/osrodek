@@ -28,11 +28,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
   </head>
-  <body>
+  <body class="no-js">
     <div class="wrapper">       
       <header id="home">
         <div class="container header">
-          <nav class="navbar" aria-label="main navigation">
+          <nav class="navbar fixed" aria-label="main navigation">
             <div class="navbar-brand">
               <div class="brand-names">
                 <p class="title brand-title"> <a href="#home">Psycholog</a></p>
@@ -75,14 +75,82 @@
               <div class="column is-half-tablet is-one-fifth-desktop">
                 <div class="icon category-icon"><i class="mdi mdi-car-hatchback" aria-hidden="true"></i></div>
                 <h3 class="is-size-4 category-title">Kierowcy</h3>
+                <div class="modal" id="drivers">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Badania kierowców</p>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+                    <div class="modal-card-body content">
+                      <ol>
+                        <li>
+                          Kwalifikacyjne i okresowe badania kierowców wszystkich kategorii, wykonujących przewóz osób lub towarówna podstawie art.39k i 39m ustawy z dnia 6 września 2001r. o transporcie drogowym (Dz. U. z 2007r. Nr. 125 poz. 874 i Nr. 1238)</li>
+                        <li>
+                          Badania kierowców i osób ubiegających się o uprawnienia do kierowania pojazdami zgodnie z art. 124 z dnia 20 czerwca 1997r.- Prawo o ruchu drogowym (Dz. U. z 2003r) obejmujące:
+                          <ol>
+                            <li>egzaminatorów i instruktorów nauki jazdy (wstępne i okresowe)</li>
+                            <li>kierowców pojazdów uprzywilejowanych (wstępne i okresowe)</li>
+                            <li>motorniczych</li>
+                            <li>zatrzymanych po spożyciu alkoholu lub środków odurzających</li>
+                            <li>osób, które przekroczyły limit punktów karnych</li>
+                            <li>uczestników i sprawców wypadków ubiegających się o przywrócenie prawa jazdy</li>
+                            <li>w stosunku do których istnieją zastrzeżenia zdrowotne.</li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="column is-half-tablet is-one-fifth-desktop">
                 <div class="icon category-icon"><i class="mdi mdi-forklift" aria-hidden="true"></i></div>
                 <h3 class="is-size-4 category-title">Operatorzy</h3>
+                <div class="modal" id="operators">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Badania operatorów</p>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+                    <div class="modal-card-body content">
+                      <ol>
+                        <li>wszelkiego sprzętu budowlanego i drogowego</li>
+                        <li>maszyn drogowych</li>
+                        <li>maszyn budowlanych</li>
+                        <li>wózków widłowych i platformowych</li>
+                        <li>suwnic i wind</li>
+                        <li>operatorzy jednostanowiskowi i wielostanowiskowi</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="column is-half-tablet is-one-fifth-desktop">
                 <div class="icon category-icon"><i class="mdi mdi-nut" aria-hidden="true"></i></div>
                 <h3 class="is-size-4 category-title">Inne stanowiska</h3>
+                <div class="modal" id="other">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Inne stanowiska</p>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+                    <div class="modal-card-body content">
+                      <ol>
+                        <li>górnicze</li>
+                        <li>hutnicze</li>
+                        <li>kolejowe (w transporcie wewnątrzzakładowym)</li>
+                        <li>budowlane</li>
+                        <li>montażowe</li>
+                        <li>elektromonterzy, telemonterzy, elektroenergetycy</li>
+                        <li>prace na wysokości</li>
+                        <li>praca w polu promieniowania jonizującego</li>
+                        <li>pracownicy zabezpieczenia technicznego</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="column is-half-tablet is-one-fifth-desktop">
                 <div class="icon category-icon"><i class="mdi mdi-account-multiple" aria-hidden="true"></i></div>
@@ -121,7 +189,7 @@
                   <div class="message-header message-toggle">
                     <h3> Badania kwalifikacyjne i okresowe dla stanowisk</h3><span class="arrow mdi mdi-arrow-down-drop-circle-outline mdi-24px is-hidden-tablet"></span>
                   </div>
-                  <div class="message-body hidden toggle">
+                  <div class="message-body toggle no-js">
                     <ul>
                       <li>Kierowca zawodowy</li>
                       <li>Kierowca kategorii C1, </li>
@@ -144,7 +212,7 @@
                   <div class="message-header message-toggle">
                     <h3> Badania osób ubiegających się o odzyskanie uprawnień do kierowania pojazdami</h3><span class="arrow mdi mdi-arrow-down-drop-circle-outline mdi-24px is-hidden-tablet"></span>
                   </div>
-                  <div class="message-body hidden toggle"> 
+                  <div class="message-body toggle no-js"> 
                     <ul>
                       <li>Po zatrzymaniu w stanie wskazującym na spożycie alkoholi lub innych środków odurzających</li>
                       <li>Po przekroczeniu 24 punktów karnych</li>
@@ -160,7 +228,7 @@
                   <div class="message-header message-toggle">
                     <h3> Badania na stanowiska operatorskie</h3><span class="arrow mdi mdi-arrow-down-drop-circle-outline mdi-24px is-hidden-tablet"></span>
                   </div>
-                  <div class="message-body hidden toggle"> 
+                  <div class="message-body toggle no-js"> 
                     <ul>
                       <li>Operator sprzętu budowlanego i drogowego</li>
                       <li>Kierowca wózków widłowych i platformowych</li>
